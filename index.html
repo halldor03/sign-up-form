@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google sign-up form</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./signupform.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./img/google_logo.svg" alt="logo" />
+      </div>
+      <div class="title">Create your Google Account</div>
+      <form>
+        <p>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First name"
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last name"
+            required
+          />
+        </p>
+        <div class="mail">
+          <input
+            type="text"
+            name="mail"
+            id="mail"
+            placeholder="Username"
+            minlength="6"
+            maxlength="30"
+            required
+            pattern="([a-zA-Z0-9.]){6,30}"
+          />
+          <div class="mailTemplate">@gmail.com</div>
+          <div class="mailMessage">You can use letters, numbers & periods (6 to 30 characters).</div>
+        </div>
+        <p>
+          <input type="password" name="psw" id="psw" placeholder="Password" minlength="8" required/>
+          <input
+            type="password"
+            name="pswCon"
+            id="pswCon"
+            placeholder="Confirm"
+            minlength="8"
+            required
+          />
+          <div class="pswMessage">Use 8 or more characters with a mix of letters, numbers & symbols</div>
+        </p>
+        <button type="sumbit">Create account</button>
+      </form>
+      <div class="sideimage">
+        <img src="./img/google_sideimage.svg" alt="sideimage" />
+        <p>One account. All of Google working for you.</p>
+      </div>
+    </div>
+  </body>
+</html>
